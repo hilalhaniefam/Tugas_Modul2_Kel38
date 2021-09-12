@@ -4,7 +4,7 @@ export default function CardList(props) {
   return (
     <div key={id} className="w-full bg-gray-100">
       <div className="max-w-2xl mx-auto mb-6 py-4 px-2 sm:px-2 lg:max-w-7xl lg:px-8">
-        <div className="h-full object-center group rounded-md rounded-3xl mt-4 grid grid-cols-1 divide-y divide-gray-200 bg-white  filter drop-shadow-md md:drop-shadow-xl ">
+        <div className="h-56 sm:h-full object-center group rounded-md rounded-3xl mt-4 grid grid-cols-1 divide-y divide-gray-200 bg-white  filter drop-shadow-md md:drop-shadow-xl ">
           <div className="p-2 group ">
             <h2 className="truncate ml-4 text-2xl font-bold trackingtight text-gray-900">
               Buah {nama}
@@ -14,10 +14,10 @@ export default function CardList(props) {
             <img
               src={image}
               alt="Gambar"
-              className="mt-2 h-full object-center object-cover"
+              className="mt-2 w-full h-full object-contain object-center"
             />
           </div>
-          <div className="p-2 px-1 mt-4 flex justify-between text-base">
+          <div className="truncate p-2 px-1 mt-4 flex justify-between text-base">
             <div>
               <h3
                 className={`${
@@ -27,9 +27,11 @@ export default function CardList(props) {
                 <span ariahidden="true" className="absolute inset-0" />
                 Nama : {nama}
               </h3>
-              <p className="ml-4 mt-1 text-gray-500">Rasa : {rasa}</p>
+              <p className="ml-4 mt-1 text-gray-500 truncate ">Rasa : {rasa}</p>
             </div>
-            <p className="mr-4 font-medium text-gray-900">Warna : {warna}</p>
+            <p className="mr-4 font-medium text-gray-900 truncate ">
+              Warna : {warna}
+            </p>
           </div>
         </div>
       </div>
