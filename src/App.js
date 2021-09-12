@@ -1,15 +1,16 @@
 function App() {
   return (
-    <div className="C">
-      <div
-        className="flex items-center justify-center bg-grey-900"
-        style={{ height: "100vh" }}>
-        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center">
-          <span className="block text-orange-300">Nama Buah</span>
-          <span className="block text-blue-600">======================</span>
-          <p className="text-center text-gray-300 font-normal">
-  -Kelompok 38-
-  </p>
+    <div
+      className="flex items-center justify-center bg-blue-500"
+      style={{ height: "60vh" }}
+    >
+      <div className="rounded-md rounded-3xl px-48 py-20 bg-blue-50">
+        <h2 className="font-extrabold tracking-tight text-gray-900 text-center">
+          <span className="block text-5xl text-blue-500">NAMA BUAH</span>
+          <span className="block text-blue-500">-------</span>
+          <p className="text-center text-2xl text-blue-500 font-normal">
+            Kelompok 38
+          </p>
         </h2>
       </div>
     </div>
