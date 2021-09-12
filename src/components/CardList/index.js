@@ -4,17 +4,17 @@ export default function CardList(props) {
   return (
     <div key={id} className="w-full bg-gray-100">
       <div className="max-w-2xl mx-auto mb-6 py-4 px-2 sm:px-2 lg:max-w-7xl lg:px-8">
-        <div className="object-center group rounded-md rounded-3xl mt-4 grid grid-cols-1 divide-y divide-gray-200 bg-white  filter drop-shadow-md md:drop-shadow-xl ">
+        <div className="h-full object-center group rounded-md rounded-3xl mt-4 grid grid-cols-1 divide-y divide-gray-200 bg-white  filter drop-shadow-md md:drop-shadow-xl ">
           <div className="p-2 group ">
-            <h2 className="ml-4 text-2xl font-bold trackingtight text-gray-900">
+            <h2 className="truncate ml-4 text-2xl font-bold trackingtight text-gray-900">
               Buah {nama}
             </h2>
           </div>
-          <div className="py-4 px-8 aspect-w-1 aspect-h-1 overflow-hidden grouphover:opacity-75 w-full aspect-none object-center">
+          <div className="py-4 px-8 sm:h-32 md:h-64 lg:h-72 aspect-w-1 aspect-h-1 overflow-hidden grouphover:opacity-75 h-full w-full aspect-none object-center">
             <img
               src={image}
               alt="Gambar"
-              className="mt-2 w-full object-center objectcover lg:w-full"
+              className="mt-2 h-full object-center object-cover"
             />
           </div>
           <div className="p-2 px-1 mt-4 flex justify-between text-base">
